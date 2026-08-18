@@ -43,87 +43,91 @@ days:
     title: "Measurement and consolidation"
     type: benchmark
 
-  # Skeleton for remaining Atlas days (Days 11–100)
+  # Threads & Concurrency (Days 11–20)
   - day: 11
     topic: threads
-    title: "Threads and concurrency overview"
+    title: "Threads and thread lifecycle"
     type: theory
   - day: 12
-    topic: atlas
-    title: "Atlas Day 12"
-    type: theory
+    topic: threads
+    title: "Shared memory and data races"
+    type: experiment
   - day: 13
-    topic: atlas
-    title: "Atlas Day 13"
-    type: theory
+    topic: threads
+    title: "Mutexes and thread-safe counters"
+    type: implementation
   - day: 14
-    topic: atlas
-    title: "Atlas Day 14"
-    type: theory
+    topic: threads
+    title: "Read/write locks"
+    type: implementation
   - day: 15
-    topic: atlas
-    title: "Atlas Day 15"
-    type: theory
+    topic: threads
+    title: "Atomic operations"
+    type: implementation
   - day: 16
-    topic: atlas
-    title: "Atlas Day 16"
-    type: theory
+    topic: threads
+    title: "Channels and producer/consumer"
+    type: experiment
   - day: 17
-    topic: atlas
-    title: "Atlas Day 17"
-    type: theory
+    topic: threads
+    title: "Thread pool"
+    type: implementation
   - day: 18
-    topic: atlas
-    title: "Atlas Day 18"
-    type: theory
+    topic: threads
+    title: "Work queues and backpressure"
+    type: implementation
   - day: 19
-    topic: atlas
-    title: "Atlas Day 19"
-    type: theory
+    topic: threads
+    title: "Races, deadlocks, and contention"
+    type: experiment
   - day: 20
-    topic: atlas
-    title: "Atlas Day 20"
-    type: theory
+    topic: threads
+    title: "Concurrency benchmarking and integration"
+    type: benchmark
+
+  # Memory & Memory Management (Days 21–30)
   - day: 21
-    topic: atlas
-    title: "Atlas Day 21"
+    topic: memory
+    title: "Memory fundamentals"
     type: theory
   - day: 22
-    topic: atlas
-    title: "Atlas Day 22"
-    type: theory
+    topic: memory
+    title: "Pages and virtual memory"
+    type: experiment
   - day: 23
-    topic: atlas
-    title: "Atlas Day 23"
-    type: theory
+    topic: memory
+    title: "Page tables and address translation"
+    type: implementation
   - day: 24
-    topic: atlas
-    title: "Atlas Day 24"
-    type: theory
+    topic: memory
+    title: "Stack and heap"
+    type: experiment
   - day: 25
-    topic: atlas
-    title: "Atlas Day 25"
-    type: theory
+    topic: memory
+    title: "Allocator simulator"
+    type: implementation
   - day: 26
-    topic: atlas
-    title: "Atlas Day 26"
-    type: theory
+    topic: memory
+    title: "Fragmentation and allocation strategies"
+    type: experiment
   - day: 27
-    topic: atlas
-    title: "Atlas Day 27"
-    type: theory
+    topic: memory
+    title: "mmap and memory mapping"
+    type: experiment
   - day: 28
-    topic: atlas
-    title: "Atlas Day 28"
-    type: theory
+    topic: memory
+    title: "Copy-on-write"
+    type: experiment
   - day: 29
-    topic: atlas
-    title: "Atlas Day 29"
-    type: theory
+    topic: memory
+    title: "CPU cache and memory locality"
+    type: benchmark
   - day: 30
-    topic: atlas
-    title: "Atlas Day 30"
-    type: theory
+    topic: memory
+    title: "Memory engineering lab"
+    type: implementation
+
+  # Skeleton for remaining Atlas days (Days 31–100)
   - day: 31
     topic: atlas
     title: "Atlas Day 31"

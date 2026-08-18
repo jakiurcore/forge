@@ -206,8 +206,17 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "clap",
+ "forge-concurrency",
  "forge-core",
+ "forge-memory",
  "forge-process",
+]
+
+[[package]]
+name = "forge-concurrency"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
 ]
 
 [[package]]
@@ -220,6 +229,17 @@ dependencies = [
  "serde_yaml",
  "tempfile",
  "toml",
+]
+
+[[package]]
+name = "forge-memory"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "forge-process",
+ "libc",
+ "nix",
+ "tempfile",
 ]
 
 [[package]]

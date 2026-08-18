@@ -5,6 +5,7 @@ use clap::{Parser, Subcommand};
 use forge_core::curriculum::Curriculum;
 use forge_core::state::ForgeState;
 use forge_core::status::StatusReport;
+use std::time::Duration;
 
 /// Forge — a 300-day autonomous engineering laboratory.
 #[derive(Debug, Parser)]
@@ -23,6 +24,16 @@ enum Command {
         #[command(subcommand)]
         action: ProcessAction,
     },
+    /// Concurrency demonstrations and experiments.
+    Concurrency {
+        #[command(subcommand)]
+        action: ConcurrencyAction,
+    },
+    /// Memory management utilities and inspection.
+    Memory {
+        #[command(subcommand)]
+        action: MemoryAction,
+    },
 }
 
 #[derive(Debug, Subcommand)]
@@ -31,6 +42,22 @@ enum ProcessAction {
     Inspect { pid: u32 },
     /// List open file descriptors for a process.
     Fds { pid: u32 },
+}
+
+#[derive(Debug, Subcommand)]
+enum ConcurrencyAction {
+    /// Demonstrate a safe logical race condition.
+    RaceDemo,
+    /// Demonstrate deadlock with a timeout.
+    DeadlockDemo,
+}
+
+#[derive(Debug, Subcommand)]
+enum MemoryAction {
+    /// Report the system page size.
+    PageSize,
+    /// Inspect memory mappings of a process.
+    Inspect { pid: u32 },
 }
 
 fn main() -> anyhow::Result<()> {
@@ -56,6 +83,43 @@ fn main() -> anyhow::Result<()> {
                 let snapshot = forge_process::ProcessSnapshot::inspect(pid)
                     .map_err(|e| anyhow::anyhow!("failed to inspect process {}: {}", pid, e))?;
                 println!("{}", snapshot.render_fds());
+                Ok(())
+            }
+        },
+        Command::Concurrency { action } => match action {
+            ConcurrencyAction::RaceDemo => {
+                let (observed, expected) = forge_concurrency::race_demo::demonstrate_race(8, 1000);
+                println!("observed: {}, expected: {}", observed, expected);
+                if observed < expected {
+                    println!("race condition lost {} updates", expected - observed);
+                }
+                Ok(())
+            }
+            ConcurrencyAction::DeadlockDemo => {
+                match forge_concurrency::deadlock_demo::demonstrate_deadlock(Duration::from_secs(1))
+                {
+                    Some(_) => println!("completed without deadlock"),
+                    None => println!("deadlock detected (timed out)"),
+                }
+                Ok(())
+            }
+        },
+        Command::Memory { action } => match action {
+            MemoryAction::PageSize => {
+                println!("{}", forge_memory::pages::page_size());
+                Ok(())
+            }
+            MemoryAction::Inspect { pid } => {
+                let maps = forge_memory::info::read_maps(pid).map_err(|e| {
+                    anyhow::anyhow!("failed to read memory maps for {}: {}", pid, e)
+                })?;
+                println!("{:<20} {:<10} {:>10} PATHNAME", "RANGE", "PERMS", "OFFSET");
+                for m in maps {
+                    println!(
+                        "{:016x}-{:016x} {:<10} {:>10} {}",
+                        m.start, m.end, m.perms, m.offset, m.pathname
+                    );
+                }
                 Ok(())
             }
         },

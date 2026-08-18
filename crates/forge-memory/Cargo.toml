@@ -1,0 +1,17 @@
+[package]
+name = "forge-memory"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+description = "Memory management experiments and inspection for Forge"
+
+[dependencies]
+anyhow = { workspace = true }
+forge-process = { path = "../forge-process" }
+libc = { workspace = true }
+nix = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3.10"

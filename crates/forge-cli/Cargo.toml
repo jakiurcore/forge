@@ -14,5 +14,7 @@ path = "src/main.rs"
 [dependencies]
 forge-core = { path = "../forge-core" }
 forge-process = { path = "../forge-process" }
+forge-concurrency = { path = "../forge-concurrency" }
+forge-memory = { path = "../forge-memory" }
 anyhow = { workspace = true }
 clap = { workspace = true }
