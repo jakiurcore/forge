@@ -18,6 +18,19 @@ struct Cli {
 enum Command {
     /// Show the current Forge status.
     Status,
+    /// Inspect operating system processes (Linux-specific).
+    Process {
+        #[command(subcommand)]
+        action: ProcessAction,
+    },
+}
+
+#[derive(Debug, Subcommand)]
+enum ProcessAction {
+    /// Inspect a process by PID.
+    Inspect { pid: u32 },
+    /// List open file descriptors for a process.
+    Fds { pid: u32 },
 }
 
 fn main() -> anyhow::Result<()> {
@@ -32,5 +45,19 @@ fn main() -> anyhow::Result<()> {
             println!("{}", report.render());
             Ok(())
         }
+        Command::Process { action } => match action {
+            ProcessAction::Inspect { pid } => {
+                let snapshot = forge_process::ProcessSnapshot::inspect(pid)
+                    .map_err(|e| anyhow::anyhow!("failed to inspect process {}: {}", pid, e))?;
+                println!("{}", snapshot.render());
+                Ok(())
+            }
+            ProcessAction::Fds { pid } => {
+                let snapshot = forge_process::ProcessSnapshot::inspect(pid)
+                    .map_err(|e| anyhow::anyhow!("failed to inspect process {}: {}", pid, e))?;
+                println!("{}", snapshot.render_fds());
+                Ok(())
+            }
+        },
     }
 }

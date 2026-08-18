@@ -1,47 +1,47 @@
 phase: atlas
 name: Engineering Atlas
 days:
-  # Operating systems fundamentals (Days 1–10)
+  # Processes & the Unix Process Model (Days 1–10)
   - day: 1
     topic: processes
     title: "What is a process?"
     type: theory
   - day: 2
     topic: processes
-    title: "fork and exec"
+    title: "Linux /proc process information parser"
     type: implementation
   - day: 3
-    topic: signals
-    title: "Signals and signal handlers"
-    type: implementation
-  - day: 4
-    topic: file_descriptors
-    title: "File descriptors"
-    type: theory
-  - day: 5
-    topic: pipes
-    title: "Pipes and inter-process communication"
-    type: implementation
-  - day: 6
-    topic: environment
-    title: "Process environment and exit status"
-    type: theory
-  - day: 7
-    topic: syscalls
-    title: "System calls"
-    type: theory
-  - day: 8
-    topic: process_lifecycle
-    title: "Process lifecycle"
+    topic: processes
+    title: "fork() experiment"
     type: experiment
+  - day: 4
+    topic: processes
+    title: "exec() experiment"
+    type: experiment
+  - day: 5
+    topic: processes
+    title: "exit(), wait(), and waitpid()"
+    type: experiment
+  - day: 6
+    topic: processes
+    title: "Signal handling"
+    type: experiment
+  - day: 7
+    topic: processes
+    title: "Pipes and IPC"
+    type: experiment
+  - day: 8
+    topic: processes
+    title: "File descriptor inspection"
+    type: implementation
   - day: 9
     topic: processes
-    title: "Process inspection tools"
+    title: "Process inspector CLI"
     type: implementation
   - day: 10
     topic: processes
-    title: "Operating systems fundamentals review"
-    type: review
+    title: "Measurement and consolidation"
+    type: benchmark
 
   # Skeleton for remaining Atlas days (Days 11–100)
   - day: 11
