@@ -1,0 +1,406 @@
+phase: atlas
+name: Engineering Atlas
+days:
+  # Operating systems fundamentals (Days 1–10)
+  - day: 1
+    topic: processes
+    title: "What is a process?"
+    type: theory
+  - day: 2
+    topic: processes
+    title: "fork and exec"
+    type: implementation
+  - day: 3
+    topic: signals
+    title: "Signals and signal handlers"
+    type: implementation
+  - day: 4
+    topic: file_descriptors
+    title: "File descriptors"
+    type: theory
+  - day: 5
+    topic: pipes
+    title: "Pipes and inter-process communication"
+    type: implementation
+  - day: 6
+    topic: environment
+    title: "Process environment and exit status"
+    type: theory
+  - day: 7
+    topic: syscalls
+    title: "System calls"
+    type: theory
+  - day: 8
+    topic: process_lifecycle
+    title: "Process lifecycle"
+    type: experiment
+  - day: 9
+    topic: processes
+    title: "Process inspection tools"
+    type: implementation
+  - day: 10
+    topic: processes
+    title: "Operating systems fundamentals review"
+    type: review
+
+  # Skeleton for remaining Atlas days (Days 11–100)
+  - day: 11
+    topic: threads
+    title: "Threads and concurrency overview"
+    type: theory
+  - day: 12
+    topic: atlas
+    title: "Atlas Day 12"
+    type: theory
+  - day: 13
+    topic: atlas
+    title: "Atlas Day 13"
+    type: theory
+  - day: 14
+    topic: atlas
+    title: "Atlas Day 14"
+    type: theory
+  - day: 15
+    topic: atlas
+    title: "Atlas Day 15"
+    type: theory
+  - day: 16
+    topic: atlas
+    title: "Atlas Day 16"
+    type: theory
+  - day: 17
+    topic: atlas
+    title: "Atlas Day 17"
+    type: theory
+  - day: 18
+    topic: atlas
+    title: "Atlas Day 18"
+    type: theory
+  - day: 19
+    topic: atlas
+    title: "Atlas Day 19"
+    type: theory
+  - day: 20
+    topic: atlas
+    title: "Atlas Day 20"
+    type: theory
+  - day: 21
+    topic: atlas
+    title: "Atlas Day 21"
+    type: theory
+  - day: 22
+    topic: atlas
+    title: "Atlas Day 22"
+    type: theory
+  - day: 23
+    topic: atlas
+    title: "Atlas Day 23"
+    type: theory
+  - day: 24
+    topic: atlas
+    title: "Atlas Day 24"
+    type: theory
+  - day: 25
+    topic: atlas
+    title: "Atlas Day 25"
+    type: theory
+  - day: 26
+    topic: atlas
+    title: "Atlas Day 26"
+    type: theory
+  - day: 27
+    topic: atlas
+    title: "Atlas Day 27"
+    type: theory
+  - day: 28
+    topic: atlas
+    title: "Atlas Day 28"
+    type: theory
+  - day: 29
+    topic: atlas
+    title: "Atlas Day 29"
+    type: theory
+  - day: 30
+    topic: atlas
+    title: "Atlas Day 30"
+    type: theory
+  - day: 31
+    topic: atlas
+    title: "Atlas Day 31"
+    type: theory
+  - day: 32
+    topic: atlas
+    title: "Atlas Day 32"
+    type: theory
+  - day: 33
+    topic: atlas
+    title: "Atlas Day 33"
+    type: theory
+  - day: 34
+    topic: atlas
+    title: "Atlas Day 34"
+    type: theory
+  - day: 35
+    topic: atlas
+    title: "Atlas Day 35"
+    type: theory
+  - day: 36
+    topic: atlas
+    title: "Atlas Day 36"
+    type: theory
+  - day: 37
+    topic: atlas
+    title: "Atlas Day 37"
+    type: theory
+  - day: 38
+    topic: atlas
+    title: "Atlas Day 38"
+    type: theory
+  - day: 39
+    topic: atlas
+    title: "Atlas Day 39"
+    type: theory
+  - day: 40
+    topic: atlas
+    title: "Atlas Day 40"
+    type: theory
+  - day: 41
+    topic: atlas
+    title: "Atlas Day 41"
+    type: theory
+  - day: 42
+    topic: atlas
+    title: "Atlas Day 42"
+    type: theory
+  - day: 43
+    topic: atlas
+    title: "Atlas Day 43"
+    type: theory
+  - day: 44
+    topic: atlas
+    title: "Atlas Day 44"
+    type: theory
+  - day: 45
+    topic: atlas
+    title: "Atlas Day 45"
+    type: theory
+  - day: 46
+    topic: atlas
+    title: "Atlas Day 46"
+    type: theory
+  - day: 47
+    topic: atlas
+    title: "Atlas Day 47"
+    type: theory
+  - day: 48
+    topic: atlas
+    title: "Atlas Day 48"
+    type: theory
+  - day: 49
+    topic: atlas
+    title: "Atlas Day 49"
+    type: theory
+  - day: 50
+    topic: atlas
+    title: "Atlas Day 50"
+    type: theory
+  - day: 51
+    topic: atlas
+    title: "Atlas Day 51"
+    type: theory
+  - day: 52
+    topic: atlas
+    title: "Atlas Day 52"
+    type: theory
+  - day: 53
+    topic: atlas
+    title: "Atlas Day 53"
+    type: theory
+  - day: 54
+    topic: atlas
+    title: "Atlas Day 54"
+    type: theory
+  - day: 55
+    topic: atlas
+    title: "Atlas Day 55"
+    type: theory
+  - day: 56
+    topic: atlas
+    title: "Atlas Day 56"
+    type: theory
+  - day: 57
+    topic: atlas
+    title: "Atlas Day 57"
+    type: theory
+  - day: 58
+    topic: atlas
+    title: "Atlas Day 58"
+    type: theory
+  - day: 59
+    topic: atlas
+    title: "Atlas Day 59"
+    type: theory
+  - day: 60
+    topic: atlas
+    title: "Atlas Day 60"
+    type: theory
+  - day: 61
+    topic: atlas
+    title: "Atlas Day 61"
+    type: theory
+  - day: 62
+    topic: atlas
+    title: "Atlas Day 62"
+    type: theory
+  - day: 63
+    topic: atlas
+    title: "Atlas Day 63"
+    type: theory
+  - day: 64
+    topic: atlas
+    title: "Atlas Day 64"
+    type: theory
+  - day: 65
+    topic: atlas
+    title: "Atlas Day 65"
+    type: theory
+  - day: 66
+    topic: atlas
+    title: "Atlas Day 66"
+    type: theory
+  - day: 67
+    topic: atlas
+    title: "Atlas Day 67"
+    type: theory
+  - day: 68
+    topic: atlas
+    title: "Atlas Day 68"
+    type: theory
+  - day: 69
+    topic: atlas
+    title: "Atlas Day 69"
+    type: theory
+  - day: 70
+    topic: atlas
+    title: "Atlas Day 70"
+    type: theory
+  - day: 71
+    topic: atlas
+    title: "Atlas Day 71"
+    type: theory
+  - day: 72
+    topic: atlas
+    title: "Atlas Day 72"
+    type: theory
+  - day: 73
+    topic: atlas
+    title: "Atlas Day 73"
+    type: theory
+  - day: 74
+    topic: atlas
+    title: "Atlas Day 74"
+    type: theory
+  - day: 75
+    topic: atlas
+    title: "Atlas Day 75"
+    type: theory
+  - day: 76
+    topic: atlas
+    title: "Atlas Day 76"
+    type: theory
+  - day: 77
+    topic: atlas
+    title: "Atlas Day 77"
+    type: theory
+  - day: 78
+    topic: atlas
+    title: "Atlas Day 78"
+    type: theory
+  - day: 79
+    topic: atlas
+    title: "Atlas Day 79"
+    type: theory
+  - day: 80
+    topic: atlas
+    title: "Atlas Day 80"
+    type: theory
+  - day: 81
+    topic: atlas
+    title: "Atlas Day 81"
+    type: theory
+  - day: 82
+    topic: atlas
+    title: "Atlas Day 82"
+    type: theory
+  - day: 83
+    topic: atlas
+    title: "Atlas Day 83"
+    type: theory
+  - day: 84
+    topic: atlas
+    title: "Atlas Day 84"
+    type: theory
+  - day: 85
+    topic: atlas
+    title: "Atlas Day 85"
+    type: theory
+  - day: 86
+    topic: atlas
+    title: "Atlas Day 86"
+    type: theory
+  - day: 87
+    topic: atlas
+    title: "Atlas Day 87"
+    type: theory
+  - day: 88
+    topic: atlas
+    title: "Atlas Day 88"
+    type: theory
+  - day: 89
+    topic: atlas
+    title: "Atlas Day 89"
+    type: theory
+  - day: 90
+    topic: atlas
+    title: "Atlas Day 90"
+    type: theory
+  - day: 91
+    topic: atlas
+    title: "Atlas Day 91"
+    type: theory
+  - day: 92
+    topic: atlas
+    title: "Atlas Day 92"
+    type: theory
+  - day: 93
+    topic: atlas
+    title: "Atlas Day 93"
+    type: theory
+  - day: 94
+    topic: atlas
+    title: "Atlas Day 94"
+    type: theory
+  - day: 95
+    topic: atlas
+    title: "Atlas Day 95"
+    type: theory
+  - day: 96
+    topic: atlas
+    title: "Atlas Day 96"
+    type: theory
+  - day: 97
+    topic: atlas
+    title: "Atlas Day 97"
+    type: theory
+  - day: 98
+    topic: atlas
+    title: "Atlas Day 98"
+    type: theory
+  - day: 99
+    topic: atlas
+    title: "Atlas Day 99"
+    type: theory
+  - day: 100
+    topic: atlas
+    title: "Atlas Day 100"
+    type: theory

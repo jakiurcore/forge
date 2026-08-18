@@ -1,0 +1,7 @@
+phase: foundation
+name: Foundation
+days:
+  - day: 0
+    topic: foundation
+    title: "Forge Foundation"
+    type: foundation

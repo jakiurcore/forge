@@ -1,0 +1,56 @@
+name: Daily Forge Run
+
+on:
+  schedule:
+    # Run once per day at 06:17 UTC (off-peak to avoid API congestion).
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Configure commit attribution for any automated commits.
+      # Set these as repository variables (Settings > Secrets and variables > Actions > Variables):
+      #   FORGE_COMMITTER_NAME  -> your name, e.g. "Jakiur"
+      #   FORGE_COMMITTER_EMAIL -> your GitHub noreply email, e.g. "243452307+jakiurcore@users.noreply.github.com"
+      - name: Configure Git committer
+        run: |
+          git config user.name "${{ vars.FORGE_COMMITTER_NAME }}"
+          git config user.email "${{ vars.FORGE_COMMITTER_EMAIL }}"
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo dependencies
+        uses: Swatinem/rust-cache@v2
+
+      - name: Determine Forge day
+        id: forge_day
+        run: |
+          mkdir -p .forge
+          if [ -f .forge/state.toml ]; then
+            echo "state_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "state_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build CLI
+        run: cargo build --bin forge --release
+
+      - name: Show Forge status
+        run: ./target/release/forge status
+
+      - name: Run validation
+        run: ./scripts/validate.sh
+
+      - name: Watchdog check
+        run: ./scripts/watchdog.sh
+
+      # Auto-commit and push are intentionally disabled in BUILD 01.
+      # They will be added once the daily execution engine is implemented.

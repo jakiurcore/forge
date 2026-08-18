@@ -1,0 +1,7 @@
+/target
+/.forge/state.toml
+/logs/*.md
+/logs/*.json
+*.swp
+*.swo
+.DS_Store

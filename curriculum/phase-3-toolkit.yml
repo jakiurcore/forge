@@ -1,0 +1,403 @@
+phase: toolkit
+name: Developer Toolkit
+days:
+  - day: 201
+    topic: toolkit
+    title: "Toolkit Day 201"
+    type: theory
+  - day: 202
+    topic: toolkit
+    title: "Toolkit Day 202"
+    type: theory
+  - day: 203
+    topic: toolkit
+    title: "Toolkit Day 203"
+    type: theory
+  - day: 204
+    topic: toolkit
+    title: "Toolkit Day 204"
+    type: theory
+  - day: 205
+    topic: toolkit
+    title: "Toolkit Day 205"
+    type: theory
+  - day: 206
+    topic: toolkit
+    title: "Toolkit Day 206"
+    type: theory
+  - day: 207
+    topic: toolkit
+    title: "Toolkit Day 207"
+    type: theory
+  - day: 208
+    topic: toolkit
+    title: "Toolkit Day 208"
+    type: theory
+  - day: 209
+    topic: toolkit
+    title: "Toolkit Day 209"
+    type: theory
+  - day: 210
+    topic: toolkit
+    title: "Toolkit Day 210"
+    type: theory
+  - day: 211
+    topic: toolkit
+    title: "Toolkit Day 211"
+    type: theory
+  - day: 212
+    topic: toolkit
+    title: "Toolkit Day 212"
+    type: theory
+  - day: 213
+    topic: toolkit
+    title: "Toolkit Day 213"
+    type: theory
+  - day: 214
+    topic: toolkit
+    title: "Toolkit Day 214"
+    type: theory
+  - day: 215
+    topic: toolkit
+    title: "Toolkit Day 215"
+    type: theory
+  - day: 216
+    topic: toolkit
+    title: "Toolkit Day 216"
+    type: theory
+  - day: 217
+    topic: toolkit
+    title: "Toolkit Day 217"
+    type: theory
+  - day: 218
+    topic: toolkit
+    title: "Toolkit Day 218"
+    type: theory
+  - day: 219
+    topic: toolkit
+    title: "Toolkit Day 219"
+    type: theory
+  - day: 220
+    topic: toolkit
+    title: "Toolkit Day 220"
+    type: theory
+  - day: 221
+    topic: toolkit
+    title: "Toolkit Day 221"
+    type: theory
+  - day: 222
+    topic: toolkit
+    title: "Toolkit Day 222"
+    type: theory
+  - day: 223
+    topic: toolkit
+    title: "Toolkit Day 223"
+    type: theory
+  - day: 224
+    topic: toolkit
+    title: "Toolkit Day 224"
+    type: theory
+  - day: 225
+    topic: toolkit
+    title: "Toolkit Day 225"
+    type: theory
+  - day: 226
+    topic: toolkit
+    title: "Toolkit Day 226"
+    type: theory
+  - day: 227
+    topic: toolkit
+    title: "Toolkit Day 227"
+    type: theory
+  - day: 228
+    topic: toolkit
+    title: "Toolkit Day 228"
+    type: theory
+  - day: 229
+    topic: toolkit
+    title: "Toolkit Day 229"
+    type: theory
+  - day: 230
+    topic: toolkit
+    title: "Toolkit Day 230"
+    type: theory
+  - day: 231
+    topic: toolkit
+    title: "Toolkit Day 231"
+    type: theory
+  - day: 232
+    topic: toolkit
+    title: "Toolkit Day 232"
+    type: theory
+  - day: 233
+    topic: toolkit
+    title: "Toolkit Day 233"
+    type: theory
+  - day: 234
+    topic: toolkit
+    title: "Toolkit Day 234"
+    type: theory
+  - day: 235
+    topic: toolkit
+    title: "Toolkit Day 235"
+    type: theory
+  - day: 236
+    topic: toolkit
+    title: "Toolkit Day 236"
+    type: theory
+  - day: 237
+    topic: toolkit
+    title: "Toolkit Day 237"
+    type: theory
+  - day: 238
+    topic: toolkit
+    title: "Toolkit Day 238"
+    type: theory
+  - day: 239
+    topic: toolkit
+    title: "Toolkit Day 239"
+    type: theory
+  - day: 240
+    topic: toolkit
+    title: "Toolkit Day 240"
+    type: theory
+  - day: 241
+    topic: toolkit
+    title: "Toolkit Day 241"
+    type: theory
+  - day: 242
+    topic: toolkit
+    title: "Toolkit Day 242"
+    type: theory
+  - day: 243
+    topic: toolkit
+    title: "Toolkit Day 243"
+    type: theory
+  - day: 244
+    topic: toolkit
+    title: "Toolkit Day 244"
+    type: theory
+  - day: 245
+    topic: toolkit
+    title: "Toolkit Day 245"
+    type: theory
+  - day: 246
+    topic: toolkit
+    title: "Toolkit Day 246"
+    type: theory
+  - day: 247
+    topic: toolkit
+    title: "Toolkit Day 247"
+    type: theory
+  - day: 248
+    topic: toolkit
+    title: "Toolkit Day 248"
+    type: theory
+  - day: 249
+    topic: toolkit
+    title: "Toolkit Day 249"
+    type: theory
+  - day: 250
+    topic: toolkit
+    title: "Toolkit Day 250"
+    type: theory
+  - day: 251
+    topic: toolkit
+    title: "Toolkit Day 251"
+    type: theory
+  - day: 252
+    topic: toolkit
+    title: "Toolkit Day 252"
+    type: theory
+  - day: 253
+    topic: toolkit
+    title: "Toolkit Day 253"
+    type: theory
+  - day: 254
+    topic: toolkit
+    title: "Toolkit Day 254"
+    type: theory
+  - day: 255
+    topic: toolkit
+    title: "Toolkit Day 255"
+    type: theory
+  - day: 256
+    topic: toolkit
+    title: "Toolkit Day 256"
+    type: theory
+  - day: 257
+    topic: toolkit
+    title: "Toolkit Day 257"
+    type: theory
+  - day: 258
+    topic: toolkit
+    title: "Toolkit Day 258"
+    type: theory
+  - day: 259
+    topic: toolkit
+    title: "Toolkit Day 259"
+    type: theory
+  - day: 260
+    topic: toolkit
+    title: "Toolkit Day 260"
+    type: theory
+  - day: 261
+    topic: toolkit
+    title: "Toolkit Day 261"
+    type: theory
+  - day: 262
+    topic: toolkit
+    title: "Toolkit Day 262"
+    type: theory
+  - day: 263
+    topic: toolkit
+    title: "Toolkit Day 263"
+    type: theory
+  - day: 264
+    topic: toolkit
+    title: "Toolkit Day 264"
+    type: theory
+  - day: 265
+    topic: toolkit
+    title: "Toolkit Day 265"
+    type: theory
+  - day: 266
+    topic: toolkit
+    title: "Toolkit Day 266"
+    type: theory
+  - day: 267
+    topic: toolkit
+    title: "Toolkit Day 267"
+    type: theory
+  - day: 268
+    topic: toolkit
+    title: "Toolkit Day 268"
+    type: theory
+  - day: 269
+    topic: toolkit
+    title: "Toolkit Day 269"
+    type: theory
+  - day: 270
+    topic: toolkit
+    title: "Toolkit Day 270"
+    type: theory
+  - day: 271
+    topic: toolkit
+    title: "Toolkit Day 271"
+    type: theory
+  - day: 272
+    topic: toolkit
+    title: "Toolkit Day 272"
+    type: theory
+  - day: 273
+    topic: toolkit
+    title: "Toolkit Day 273"
+    type: theory
+  - day: 274
+    topic: toolkit
+    title: "Toolkit Day 274"
+    type: theory
+  - day: 275
+    topic: toolkit
+    title: "Toolkit Day 275"
+    type: theory
+  - day: 276
+    topic: toolkit
+    title: "Toolkit Day 276"
+    type: theory
+  - day: 277
+    topic: toolkit
+    title: "Toolkit Day 277"
+    type: theory
+  - day: 278
+    topic: toolkit
+    title: "Toolkit Day 278"
+    type: theory
+  - day: 279
+    topic: toolkit
+    title: "Toolkit Day 279"
+    type: theory
+  - day: 280
+    topic: toolkit
+    title: "Toolkit Day 280"
+    type: theory
+  - day: 281
+    topic: toolkit
+    title: "Toolkit Day 281"
+    type: theory
+  - day: 282
+    topic: toolkit
+    title: "Toolkit Day 282"
+    type: theory
+  - day: 283
+    topic: toolkit
+    title: "Toolkit Day 283"
+    type: theory
+  - day: 284
+    topic: toolkit
+    title: "Toolkit Day 284"
+    type: theory
+  - day: 285
+    topic: toolkit
+    title: "Toolkit Day 285"
+    type: theory
+  - day: 286
+    topic: toolkit
+    title: "Toolkit Day 286"
+    type: theory
+  - day: 287
+    topic: toolkit
+    title: "Toolkit Day 287"
+    type: theory
+  - day: 288
+    topic: toolkit
+    title: "Toolkit Day 288"
+    type: theory
+  - day: 289
+    topic: toolkit
+    title: "Toolkit Day 289"
+    type: theory
+  - day: 290
+    topic: toolkit
+    title: "Toolkit Day 290"
+    type: theory
+  - day: 291
+    topic: toolkit
+    title: "Toolkit Day 291"
+    type: theory
+  - day: 292
+    topic: toolkit
+    title: "Toolkit Day 292"
+    type: theory
+  - day: 293
+    topic: toolkit
+    title: "Toolkit Day 293"
+    type: theory
+  - day: 294
+    topic: toolkit
+    title: "Toolkit Day 294"
+    type: theory
+  - day: 295
+    topic: toolkit
+    title: "Toolkit Day 295"
+    type: theory
+  - day: 296
+    topic: toolkit
+    title: "Toolkit Day 296"
+    type: theory
+  - day: 297
+    topic: toolkit
+    title: "Toolkit Day 297"
+    type: theory
+  - day: 298
+    topic: toolkit
+    title: "Toolkit Day 298"
+    type: theory
+  - day: 299
+    topic: toolkit
+    title: "Toolkit Day 299"
+    type: theory
+  - day: 300
+    topic: toolkit
+    title: "Toolkit Day 300"
+    type: theory

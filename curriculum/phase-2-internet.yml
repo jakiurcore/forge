@@ -1,0 +1,403 @@
+phase: internet
+name: Build the Internet
+days:
+  - day: 101
+    topic: internet
+    title: "Internet Day 101"
+    type: theory
+  - day: 102
+    topic: internet
+    title: "Internet Day 102"
+    type: theory
+  - day: 103
+    topic: internet
+    title: "Internet Day 103"
+    type: theory
+  - day: 104
+    topic: internet
+    title: "Internet Day 104"
+    type: theory
+  - day: 105
+    topic: internet
+    title: "Internet Day 105"
+    type: theory
+  - day: 106
+    topic: internet
+    title: "Internet Day 106"
+    type: theory
+  - day: 107
+    topic: internet
+    title: "Internet Day 107"
+    type: theory
+  - day: 108
+    topic: internet
+    title: "Internet Day 108"
+    type: theory
+  - day: 109
+    topic: internet
+    title: "Internet Day 109"
+    type: theory
+  - day: 110
+    topic: internet
+    title: "Internet Day 110"
+    type: theory
+  - day: 111
+    topic: internet
+    title: "Internet Day 111"
+    type: theory
+  - day: 112
+    topic: internet
+    title: "Internet Day 112"
+    type: theory
+  - day: 113
+    topic: internet
+    title: "Internet Day 113"
+    type: theory
+  - day: 114
+    topic: internet
+    title: "Internet Day 114"
+    type: theory
+  - day: 115
+    topic: internet
+    title: "Internet Day 115"
+    type: theory
+  - day: 116
+    topic: internet
+    title: "Internet Day 116"
+    type: theory
+  - day: 117
+    topic: internet
+    title: "Internet Day 117"
+    type: theory
+  - day: 118
+    topic: internet
+    title: "Internet Day 118"
+    type: theory
+  - day: 119
+    topic: internet
+    title: "Internet Day 119"
+    type: theory
+  - day: 120
+    topic: internet
+    title: "Internet Day 120"
+    type: theory
+  - day: 121
+    topic: internet
+    title: "Internet Day 121"
+    type: theory
+  - day: 122
+    topic: internet
+    title: "Internet Day 122"
+    type: theory
+  - day: 123
+    topic: internet
+    title: "Internet Day 123"
+    type: theory
+  - day: 124
+    topic: internet
+    title: "Internet Day 124"
+    type: theory
+  - day: 125
+    topic: internet
+    title: "Internet Day 125"
+    type: theory
+  - day: 126
+    topic: internet
+    title: "Internet Day 126"
+    type: theory
+  - day: 127
+    topic: internet
+    title: "Internet Day 127"
+    type: theory
+  - day: 128
+    topic: internet
+    title: "Internet Day 128"
+    type: theory
+  - day: 129
+    topic: internet
+    title: "Internet Day 129"
+    type: theory
+  - day: 130
+    topic: internet
+    title: "Internet Day 130"
+    type: theory
+  - day: 131
+    topic: internet
+    title: "Internet Day 131"
+    type: theory
+  - day: 132
+    topic: internet
+    title: "Internet Day 132"
+    type: theory
+  - day: 133
+    topic: internet
+    title: "Internet Day 133"
+    type: theory
+  - day: 134
+    topic: internet
+    title: "Internet Day 134"
+    type: theory
+  - day: 135
+    topic: internet
+    title: "Internet Day 135"
+    type: theory
+  - day: 136
+    topic: internet
+    title: "Internet Day 136"
+    type: theory
+  - day: 137
+    topic: internet
+    title: "Internet Day 137"
+    type: theory
+  - day: 138
+    topic: internet
+    title: "Internet Day 138"
+    type: theory
+  - day: 139
+    topic: internet
+    title: "Internet Day 139"
+    type: theory
+  - day: 140
+    topic: internet
+    title: "Internet Day 140"
+    type: theory
+  - day: 141
+    topic: internet
+    title: "Internet Day 141"
+    type: theory
+  - day: 142
+    topic: internet
+    title: "Internet Day 142"
+    type: theory
+  - day: 143
+    topic: internet
+    title: "Internet Day 143"
+    type: theory
+  - day: 144
+    topic: internet
+    title: "Internet Day 144"
+    type: theory
+  - day: 145
+    topic: internet
+    title: "Internet Day 145"
+    type: theory
+  - day: 146
+    topic: internet
+    title: "Internet Day 146"
+    type: theory
+  - day: 147
+    topic: internet
+    title: "Internet Day 147"
+    type: theory
+  - day: 148
+    topic: internet
+    title: "Internet Day 148"
+    type: theory
+  - day: 149
+    topic: internet
+    title: "Internet Day 149"
+    type: theory
+  - day: 150
+    topic: internet
+    title: "Internet Day 150"
+    type: theory
+  - day: 151
+    topic: internet
+    title: "Internet Day 151"
+    type: theory
+  - day: 152
+    topic: internet
+    title: "Internet Day 152"
+    type: theory
+  - day: 153
+    topic: internet
+    title: "Internet Day 153"
+    type: theory
+  - day: 154
+    topic: internet
+    title: "Internet Day 154"
+    type: theory
+  - day: 155
+    topic: internet
+    title: "Internet Day 155"
+    type: theory
+  - day: 156
+    topic: internet
+    title: "Internet Day 156"
+    type: theory
+  - day: 157
+    topic: internet
+    title: "Internet Day 157"
+    type: theory
+  - day: 158
+    topic: internet
+    title: "Internet Day 158"
+    type: theory
+  - day: 159
+    topic: internet
+    title: "Internet Day 159"
+    type: theory
+  - day: 160
+    topic: internet
+    title: "Internet Day 160"
+    type: theory
+  - day: 161
+    topic: internet
+    title: "Internet Day 161"
+    type: theory
+  - day: 162
+    topic: internet
+    title: "Internet Day 162"
+    type: theory
+  - day: 163
+    topic: internet
+    title: "Internet Day 163"
+    type: theory
+  - day: 164
+    topic: internet
+    title: "Internet Day 164"
+    type: theory
+  - day: 165
+    topic: internet
+    title: "Internet Day 165"
+    type: theory
+  - day: 166
+    topic: internet
+    title: "Internet Day 166"
+    type: theory
+  - day: 167
+    topic: internet
+    title: "Internet Day 167"
+    type: theory
+  - day: 168
+    topic: internet
+    title: "Internet Day 168"
+    type: theory
+  - day: 169
+    topic: internet
+    title: "Internet Day 169"
+    type: theory
+  - day: 170
+    topic: internet
+    title: "Internet Day 170"
+    type: theory
+  - day: 171
+    topic: internet
+    title: "Internet Day 171"
+    type: theory
+  - day: 172
+    topic: internet
+    title: "Internet Day 172"
+    type: theory
+  - day: 173
+    topic: internet
+    title: "Internet Day 173"
+    type: theory
+  - day: 174
+    topic: internet
+    title: "Internet Day 174"
+    type: theory
+  - day: 175
+    topic: internet
+    title: "Internet Day 175"
+    type: theory
+  - day: 176
+    topic: internet
+    title: "Internet Day 176"
+    type: theory
+  - day: 177
+    topic: internet
+    title: "Internet Day 177"
+    type: theory
+  - day: 178
+    topic: internet
+    title: "Internet Day 178"
+    type: theory
+  - day: 179
+    topic: internet
+    title: "Internet Day 179"
+    type: theory
+  - day: 180
+    topic: internet
+    title: "Internet Day 180"
+    type: theory
+  - day: 181
+    topic: internet
+    title: "Internet Day 181"
+    type: theory
+  - day: 182
+    topic: internet
+    title: "Internet Day 182"
+    type: theory
+  - day: 183
+    topic: internet
+    title: "Internet Day 183"
+    type: theory
+  - day: 184
+    topic: internet
+    title: "Internet Day 184"
+    type: theory
+  - day: 185
+    topic: internet
+    title: "Internet Day 185"
+    type: theory
+  - day: 186
+    topic: internet
+    title: "Internet Day 186"
+    type: theory
+  - day: 187
+    topic: internet
+    title: "Internet Day 187"
+    type: theory
+  - day: 188
+    topic: internet
+    title: "Internet Day 188"
+    type: theory
+  - day: 189
+    topic: internet
+    title: "Internet Day 189"
+    type: theory
+  - day: 190
+    topic: internet
+    title: "Internet Day 190"
+    type: theory
+  - day: 191
+    topic: internet
+    title: "Internet Day 191"
+    type: theory
+  - day: 192
+    topic: internet
+    title: "Internet Day 192"
+    type: theory
+  - day: 193
+    topic: internet
+    title: "Internet Day 193"
+    type: theory
+  - day: 194
+    topic: internet
+    title: "Internet Day 194"
+    type: theory
+  - day: 195
+    topic: internet
+    title: "Internet Day 195"
+    type: theory
+  - day: 196
+    topic: internet
+    title: "Internet Day 196"
+    type: theory
+  - day: 197
+    topic: internet
+    title: "Internet Day 197"
+    type: theory
+  - day: 198
+    topic: internet
+    title: "Internet Day 198"
+    type: theory
+  - day: 199
+    topic: internet
+    title: "Internet Day 199"
+    type: theory
+  - day: 200
+    topic: internet
+    title: "Internet Day 200"
+    type: theory
