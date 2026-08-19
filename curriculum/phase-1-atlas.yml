@@ -127,47 +127,49 @@ days:
     title: "Memory engineering lab"
     type: implementation
 
-  # Skeleton for remaining Atlas days (Days 31–100)
+  # Networking Fundamentals (Days 31–40)
   - day: 31
-    topic: atlas
-    title: "Atlas Day 31"
+    topic: networking
+    title: "Networking model and addresses"
     type: theory
   - day: 32
-    topic: atlas
-    title: "Atlas Day 32"
-    type: theory
+    topic: networking
+    title: "Sockets and the client/server lifecycle"
+    type: implementation
   - day: 33
-    topic: atlas
-    title: "Atlas Day 33"
-    type: theory
+    topic: networking
+    title: "TCP echo server and client"
+    type: implementation
   - day: 34
-    topic: atlas
-    title: "Atlas Day 34"
-    type: theory
+    topic: networking
+    title: "UDP datagrams"
+    type: implementation
   - day: 35
-    topic: atlas
-    title: "Atlas Day 35"
-    type: theory
+    topic: networking
+    title: "Length-prefixed framing"
+    type: implementation
   - day: 36
-    topic: atlas
-    title: "Atlas Day 36"
-    type: theory
+    topic: networking
+    title: "Timeouts and connection lifecycle"
+    type: implementation
   - day: 37
-    topic: atlas
-    title: "Atlas Day 37"
-    type: theory
+    topic: networking
+    title: "Concurrent TCP server with thread pool"
+    type: implementation
   - day: 38
-    topic: atlas
-    title: "Atlas Day 38"
-    type: theory
+    topic: networking
+    title: "Forge Protocol v1"
+    type: implementation
   - day: 39
-    topic: atlas
-    title: "Atlas Day 39"
-    type: theory
+    topic: networking
+    title: "Network diagnostics and CLI"
+    type: implementation
   - day: 40
-    topic: atlas
-    title: "Atlas Day 40"
-    type: theory
+    topic: networking
+    title: "Networking lab and benchmarking"
+    type: benchmark
+
+  # Skeleton for remaining Atlas days (Days 41–100)
   - day: 41
     topic: atlas
     title: "Atlas Day 41"

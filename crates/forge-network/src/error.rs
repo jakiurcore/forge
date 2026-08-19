@@ -25,6 +25,8 @@ pub enum NetworkError {
     InvalidResponse,
     /// A network operation timed out.
     Timeout,
+    /// An error from the underlying concurrency primitive.
+    Concurrency(String),
     /// A generic error message.
     Other(String),
 }
@@ -41,6 +43,7 @@ impl fmt::Display for NetworkError {
             NetworkError::InvalidCommand(cmd) => write!(f, "invalid command: {}", cmd),
             NetworkError::InvalidResponse => write!(f, "invalid response"),
             NetworkError::Timeout => write!(f, "operation timed out"),
+            NetworkError::Concurrency(msg) => write!(f, "concurrency error: {}", msg),
             NetworkError::Other(msg) => write!(f, "{}", msg),
         }
     }
@@ -58,7 +61,13 @@ impl From<NetworkError> for io::Error {
     fn from(err: NetworkError) -> Self {
         match err {
             NetworkError::Timeout => io::Error::new(io::ErrorKind::TimedOut, err),
-            _ => io::Error::new(io::ErrorKind::Other, err),
+            _ => io::Error::other(err),
         }
+    }
+}
+
+impl From<forge_concurrency::error::ConcurrencyError> for NetworkError {
+    fn from(err: forge_concurrency::error::ConcurrencyError) -> Self {
+        NetworkError::Concurrency(err.to_string())
     }
 }

@@ -7,7 +7,9 @@ use std::net::{TcpListener, TcpStream, ToSocketAddrs};
 use std::time::Duration;
 
 /// Bind a TCP listener and return it with the concrete local address.
-pub fn bind_and_listen<A: ToSocketAddrs>(addr: A) -> Result<(TcpListener, std::net::SocketAddr), NetworkError> {
+pub fn bind_and_listen<A: ToSocketAddrs>(
+    addr: A,
+) -> Result<(TcpListener, std::net::SocketAddr), NetworkError> {
     let listener = TcpListener::bind(addr)?;
     let local = listener.local_addr()?;
     Ok((listener, local))

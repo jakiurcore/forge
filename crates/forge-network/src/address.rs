@@ -1,5 +1,6 @@
 //! Helpers for resolving and working with socket addresses.
 
+use crate::error::NetworkError;
 use std::net::ToSocketAddrs;
 
 /// Resolve a host:port string into a concrete socket address.
@@ -9,6 +10,29 @@ pub fn resolve<A: ToSocketAddrs>(addr: A) -> Result<std::net::SocketAddr, std::i
     addr.to_socket_addrs()?
         .next()
         .ok_or_else(|| std::io::Error::new(std::io::ErrorKind::InvalidInput, "empty address list"))
+}
+
+/// List local network interface names.
+///
+/// On Linux this reads `/sys/class/net`. On other platforms it currently
+/// returns an empty list.
+pub fn local_interfaces() -> Result<Vec<String>, NetworkError> {
+    #[cfg(target_os = "linux")]
+    {
+        let mut names = Vec::new();
+        for entry in std::fs::read_dir("/sys/class/net")? {
+            let entry = entry?;
+            if let Some(name) = entry.file_name().to_str() {
+                names.push(name.to_string());
+            }
+        }
+        names.sort();
+        Ok(names)
+    }
+    #[cfg(not(target_os = "linux"))]
+    {
+        Ok(Vec::new())
+    }
 }
 
 /// Bind a TCP listener to an address, returning the bound address (including

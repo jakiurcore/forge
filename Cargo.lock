@@ -209,6 +209,7 @@ dependencies = [
  "forge-concurrency",
  "forge-core",
  "forge-memory",
+ "forge-network",
  "forge-process",
 ]
 
@@ -240,6 +241,14 @@ dependencies = [
  "libc",
  "nix",
  "tempfile",
+]
+
+[[package]]
+name = "forge-network"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "forge-concurrency",
 ]
 
 [[package]]

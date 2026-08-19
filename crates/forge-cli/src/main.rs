@@ -34,6 +34,11 @@ enum Command {
         #[command(subcommand)]
         action: MemoryAction,
     },
+    /// Networking utilities and diagnostics.
+    Network {
+        #[command(subcommand)]
+        action: NetworkAction,
+    },
 }
 
 #[derive(Debug, Subcommand)]
@@ -58,6 +63,32 @@ enum MemoryAction {
     PageSize,
     /// Inspect memory mappings of a process.
     Inspect { pid: u32 },
+}
+
+#[derive(Debug, Subcommand)]
+enum NetworkAction {
+    /// Run a TCP echo server.
+    TcpEcho {
+        /// Address to bind to.
+        #[arg(long, default_value = "127.0.0.1:0")]
+        bind: String,
+    },
+    /// Send a message to a TCP echo server and print the reply.
+    TcpConnect {
+        /// Server address.
+        addr: String,
+        /// Message to send.
+        #[arg(short, long, default_value = "hello, forge")]
+        message: String,
+    },
+    /// Run a UDP echo server.
+    UdpEcho {
+        /// Address to bind to.
+        #[arg(long, default_value = "127.0.0.1:0")]
+        bind: String,
+    },
+    /// List local network interfaces and addresses.
+    Inspect,
 }
 
 fn main() -> anyhow::Result<()> {
@@ -119,6 +150,51 @@ fn main() -> anyhow::Result<()> {
                         "{:016x}-{:016x} {:<10} {:>10} {}",
                         m.start, m.end, m.perms, m.offset, m.pathname
                     );
+                }
+                Ok(())
+            }
+        },
+        Command::Network { action } => match action {
+            NetworkAction::TcpEcho { bind } => {
+                println!("starting TCP echo server on {}", bind);
+                forge_network::tcp::run_echo_server(&bind)
+                    .map_err(|e| anyhow::anyhow!("tcp echo server failed: {}", e))?;
+                Ok(())
+            }
+            NetworkAction::TcpConnect { addr, message } => {
+                let response = forge_network::tcp::send_message(
+                    addr,
+                    message.as_bytes(),
+                    Duration::from_secs(2),
+                    Duration::from_secs(2),
+                )
+                .map_err(|e| anyhow::anyhow!("tcp connect failed: {}", e))?;
+                println!("{}", String::from_utf8_lossy(&response));
+                Ok(())
+            }
+            NetworkAction::UdpEcho { bind } => {
+                let (socket, local) = forge_network::udp::bind_udp(&bind)
+                    .map_err(|e| anyhow::anyhow!("failed to bind udp socket: {}", e))?;
+                println!("UDP echo server listening on {}", local);
+                let mut buf = vec![0u8; 65535];
+                loop {
+                    let (n, peer) = socket
+                        .recv_from(&mut buf)
+                        .map_err(|e| anyhow::anyhow!("udp recv failed: {}", e))?;
+                    socket
+                        .send_to(&buf[..n], peer)
+                        .map_err(|e| anyhow::anyhow!("udp send failed: {}", e))?;
+                }
+            }
+            NetworkAction::Inspect => {
+                let ifaces = forge_network::address::local_interfaces()
+                    .map_err(|e| anyhow::anyhow!("failed to list interfaces: {}", e))?;
+                if ifaces.is_empty() {
+                    println!("no interfaces found (unsupported platform)");
+                } else {
+                    for iface in ifaces {
+                        println!("{}", iface);
+                    }
                 }
                 Ok(())
             }
